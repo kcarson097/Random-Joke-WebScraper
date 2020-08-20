@@ -7,7 +7,7 @@ root = Tk()
 
 
 def random_joke():
-    reddit = praw.Reddit(client_id = 'B69mb6gi7dkJrg',client_secret = 'ln-itHfMFQblfCCTFmguh9Ok3b0', user_agent = 'Kyle' )
+    reddit = praw.Reddit(client_id = 'enter id here',client_secret = 'enter password here', user_agent = 'Kyle' )
     jokes_list = []
     jokes = reddit.subreddit('Oneliners').hot(limit=100)
     for post in jokes:
